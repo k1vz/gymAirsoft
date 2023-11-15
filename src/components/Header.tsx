@@ -12,18 +12,24 @@ export default function Header(props: HeaderProps) {
 		<>
 			<Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }}>
 				<Typography
-					component="h2"
-					variant="h5"
-					color="inherit"
-					align="center"
+					component='h2'
+					variant='h5'
+					color='inherit'
+					align='center'
 					noWrap
 					sx={{ flex: 1 }}
 				>
 					<div style={{ display: 'flex', justifyContent: 'center' }}>
 						<img src={ bullet } style={{ width: '125px', height: '125px' }} />
+
 						<div style={{ fontSize: '18px' }}>
-							<h1 style={{ marginTop: '20px', marginBottom: '0px', textAlign:'left' }}>{ title }</h1>
-							<p style={{ marginTop: '10px' }}>{ subtitle }</p>
+							<h1 style={{
+								marginTop: '20px',
+								marginBottom: '0px',
+								textAlign:'left'
+								}}>{ title }</h1>
+
+							<p style={{ marginTop: '10px', fontSize: '19px' }}>{ subtitle }</p>
 						</div>
 					</div>
 				</Typography>
@@ -31,6 +37,5 @@ export default function Header(props: HeaderProps) {
 
 			<NavBar pages={props.pages} />
 		</>
-
 	);
 }

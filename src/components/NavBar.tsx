@@ -8,11 +8,18 @@ export function NavBar(props: NavBarProps) {
 
 	return (
 		<Toolbar disableGutters>
-			<Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center'}}>
+			<Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center' }}>
 				{pages.map((page) => (
-					<Button style={{ textTransform: 'capitalize' }} onClick={ page.onClick }
+					<Button
+						style={{ textTransform: 'capitalize' }}
+						onClick={ page.onClick }
 						key={ page.title }
-						sx={{ my: 2, color: 'black', display: 'block' }}
+						sx={{
+							my: 2,
+							color: 'black',
+							display: 'block',
+							fontSize: '16px'
+						}}
 					>
 						{ page.title }
 					</Button>

@@ -39,11 +39,13 @@ export default function Slideshow(props: ISlideshow) {
 				elevation={ 0 }
 				sx={{
 					display: 'flex',
-					height: 80,
-					pl: 2,
+					height: 90,
+					pl: 2
 				}}
 			>
-				<Typography>{ content[activeStep].content }</Typography>
+				<Typography sx={{ fontSize: '17px' }}>
+					{ content[activeStep].content }
+				</Typography>
 			</Paper>
 			<AutoPlaySwipeableViews
 				index={ activeStep }
@@ -60,7 +62,7 @@ export default function Slideshow(props: ISlideshow) {
 							display: 'block',
 							maxWidth: 400,
 							overflow: 'hidden',
-							width: '100%',
+							width: '100%'
 						}}
 						src={ step.imgPath as string }
 					/>

@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import Header from './components/Header';
 import Slideshow from './components/Slideshow';
-import { bodybuildingSlides } from './assets/bodybuilding/bodybuildingSlides';
 import { airsoftSlides } from './assets/airsoft/airsoftSlides';
+import { bodybuildingSlides } from './assets/bodybuilding/bodybuildingSlides';
 
 
 type TTopic = 'Musculação' | 'Vídeo Prático' | 'Airsoft';
@@ -25,7 +25,12 @@ function App() {
 
 	return (
 		<>
-			<Header title={ 'Desafios Táticos' } subtitle={ 'Aprimorando o condicionamento físico para o Airsoft' } pages={pages as never}/>
+			<Header
+				title={ 'Desafios Táticos' }
+				subtitle={ 'Aprimorando o condicionamento físico para o Airsoft' }
+				pages={ pages as never }
+			/>
+
 			<div style={{ marginInline: '5%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 				{topic == 'Musculação' ? <Slideshow content={ bodybuildingSlides } />: null}
 				{topic == 'Vídeo Prático' ? <div></div>: null}
