@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import Header from './components/Header';
+import { Video } from './components/Video';
+import { paths } from './assets/video/paths';
 import Slideshow from './components/Slideshow';
 import { airsoftSlides } from './assets/airsoft/airsoftSlides';
 import { bodybuildingSlides } from './assets/bodybuilding/bodybuildingSlides';
@@ -33,7 +35,7 @@ function App() {
 
 			<div style={{ marginInline: '5%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 				{topic == 'Musculação' ? <Slideshow content={ bodybuildingSlides } />: null}
-				{topic == 'Vídeo Prático' ? <div></div>: null}
+				{topic == 'Vídeo Prático' ? <Video content={ paths } />: null}
 				{topic == 'Airsoft' ? <Slideshow content={ airsoftSlides } />: null}
 			</div>
 		</>
