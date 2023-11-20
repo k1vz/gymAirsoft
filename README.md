@@ -13,3 +13,6 @@ Stack utilizada: ReactJS, Vite (MUI), TypeScript
 	1. Run `yarn` in terminal
  	2. Run `yarn dev` to start
   	3. Open address at "Local"
+
+
+![site](https://github.com/k1vz/gymAirsoft/assets/61050418/bc4f82b1-8e0f-4ad5-8d1b-f13f10cdeab4)
