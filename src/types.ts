@@ -27,8 +27,6 @@ export interface VideoProps {
 	content: {
 		thumbnail: string;
 		main: string;
-		backup: string;
-		youtube: string;
 		drive: string;
 	}
 }
